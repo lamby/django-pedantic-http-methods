@@ -6,11 +6,11 @@ setup(
     name='django-pedantic-http-methods',
     description="Raises an exception when attempting to perform side effects "
         "in GET and HEAD HTTP methods.",
-    version='0.1',
-    url='http://code.playfire.com/django-pedantic-http-methods',
+    version='0',
+    url='https://chris-lamb.co.uk/projects/django-pedantic-http-methods',
 
-    author='Playfire.com',
-    author_email='tech@playfire.com',
+    author='Chris Lamb',
+    author_email='chris@chris-lamb.co.uk',
     license='BSD',
 
     packages=find_packages(),
