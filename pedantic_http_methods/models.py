@@ -73,10 +73,10 @@ Links
 -----
 
 View/download code
-  https://github.com/playfire/django-pedantic-http-methods
+  https://github.com/lamby/django-pedantic-http-methods
 
 File a bug
-  https://github.com/playfire/django-pedantic-http-methods/issues
+  https://github.com/lamby/django-pedantic-http-methods/issues
 """
 
 import re
