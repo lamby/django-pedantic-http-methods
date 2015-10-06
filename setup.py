@@ -6,7 +6,7 @@ setup(
     name='django-pedantic-http-methods',
     description="Raises an exception when attempting to perform side effects "
         "in GET and HEAD HTTP methods.",
-    version='0',
+    version='1',
     url='https://chris-lamb.co.uk/projects/django-pedantic-http-methods',
 
     author='Chris Lamb',
