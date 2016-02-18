@@ -83,7 +83,12 @@ import re
 import sys
 
 from django.http import HttpRequest
-from django.db.backends import util, BaseDatabaseWrapper
+
+try:
+    from django.db.backends import util as utils, BaseDatabaseWrapper
+except ImportError:
+    from django.db.backends import utils
+    from django.db.backends.base.base import BaseDatabaseWrapper
 
 import app_settings
 
@@ -96,7 +101,7 @@ class IncorrectHTTPMethod(Exception):
             "which is incompatible with executing: %s" % sql,
         )
 
-class CursorWrapper(util.CursorDebugWrapper):
+class CursorWrapper(utils.CursorDebugWrapper):
     def execute(self, sql, *args, **kwargs):
         if re_sql.match(sql):
             return self.cursor.execute(sql, *args, **kwargs)
